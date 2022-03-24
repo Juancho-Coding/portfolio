@@ -1,22 +1,70 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;
+        700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap"
+            rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
         <link rel="stylesheet" href="index.css">
+        <title>Juan Pablo Alvarez - My portfolio</title>
     </head>
-    <body class="bg-dark">
 
-        <div class="container">
-            <div class="bg-accent text-dark" style="padding: 1rem">
-                light blue bg, with dark text
+    <body>
+        <section id="main-visual" class="container flex-full-height">
+            <!-- main view -->
+            <div>
+                <h1 class="ff-dosis uppercase text-dark fs-800"
+                    style="margin:1rem auto 1rem; text-align: center;">Juan Pablo Alvarez</h1>
             </div>
-            <div class="bg-white text-dark" style="padding: 1rem">
-                white bg, with dark text
+            <div>
+                <p class="text-box-main">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 
+                    1500s, when an unknown printer took a galley of type and scrambled it 
+                    to make a type specimen book.<br><br>It has survived not only five centuries, 
+                    but also the leap into electronic typesetting, remaining essentially 
+                    unchanged. It was popularised in the 1960s with the release of Letraset 
+                    sheets containing Lorem Ipsum passages, and more recently with desktop 
+                    publishing software like Aldus PageMaker including versions of Lorem 
+                    Ipsum.</p>
             </div>
-            <div class="example-component text-white" style="padding: 1rem">
-                light blue bg with 20% alpha and white text
-            </div>
-        </div>
+            <div class="profile-photo2"></div>
 
-
-        <!-- <script src="index.pack.js"></script> -->
+            <div style="margin-bottom:1rem;">
+                <div class="flex" style="justify-content:center">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                </div>
+                <hr class="hr-linea">
+                <div>
+                    <!-- navigation -->
+                    <div class="container flex" style="justify-content:center">
+                        <nav>
+                            <ul class="primary-navigation underline-indicators flex">
+                                <li class="active"><a class="uppercase text-white letter-spacing-2"
+                                    href="#main-visual"><span>01</span>Home</a></li>
+                                <li><a class="uppercase text-white letter-spacing-2"
+                                    href="#projects"><span>02</span>Projects</a></li>
+                                <li><a class="uppercase text-white letter-spacing-2"
+                                    href="#contact"><span>03</span>Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="container flex-full-height"></section>
+        <section id="contact" class="container flex-full-height"></section>
     </body>
 </html>

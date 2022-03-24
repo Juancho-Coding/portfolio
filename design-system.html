@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
@@ -10,7 +11,6 @@
         700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
             rel="stylesheet">
 
-
         <style>
         </style>
     </head>
@@ -19,7 +19,7 @@
         <div class="container">
             <h1 class="uppercase">Design System</h1>
 
-            <section id="colors">
+            <section id="colors" style="margin: 4rem 0">
                 <h2 class="numbered-title"><span>01</span> colors</h2>
                 <div class="flex">
                     <diV style="flex-grow: 1">
@@ -49,7 +49,7 @@
             <section id="typography" style="margin: 4rem 0">
                 <h2 class="numbered-title"><span>02 </span>Typography</h2>
                 <div class="flex">
-                    <div class="flow" style="flex-basis: 100%; --flow-space: 1rem">
+                    <div style="flex-basis: 100%; --flow-space: 1rem">
                         <div>
                             <p class="text-accent">Heading 1 - Bellefair Regular - 150px</p>
                             <p class="fs-900 ff-serif uppercase">Earth</p>
@@ -72,7 +72,7 @@
                         </div>
                     </div>
 
-                    <div class="flow" style="flex-basis: 100%; --flow-space:2rem">
+                    <div style="flex-basis: 100%; --flow-space:2rem">
                         <div>
                             <p class="text-accent">Subheading 1 - Bellefair Regular - 28px</p>
                             <p class="fs-500 ff-serif uppercase">384.400 km</p>
@@ -93,36 +93,70 @@
                 </div>
             </section>
 
-            <section id="interactive-elements">
+            <section class="flow" id="interactive-elements">
                 <h2 class="numbered-title"><span>03</span>interactive-elements</h2>
 
                 <!-- navigation -->
-                <div></div>
+                <div>
+                    <nav>
+                        <ul class="primary-navigation underline-indicators flex">
+                            <li class="active"><a class="uppercase text-white letter-spacing-2"
+                                href="#"><span>01</span>Active</a></li>
+                            <li><a class="uppercase text-white letter-spacing-2"
+                                href="#"><span>02</span>Hovered</a></li>
+                            <li><a class="uppercase text-white letter-spacing-2"
+                                href="#"><span>03</span>Idle</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
 
                 <div class="flex">
                     <div style="margin-top: 5rem">
                     <!-- explore button -->
                         <a href="#" class="large-button uppercase ff-serif text-dark
                         fs-600 bg-white">Explore</a>
-
-
-                    
                     </div>
 
-                    <div>
+                    <div class="flow" style="margin-bottom: 50vh;  --flow-space: 4rem">
                         <!-- Tabs -->
-
+                        <div class="tab-list underline-indicators flex">
+                            <button aria-selected="true" class="uppercase text-accent bg-dark
+                            ff-sans-cond letter-spacing-2">Moon</button>
+                            <button aria-selected="false" class="uppercase text-accent bg-dark
+                            ff-sans-cond letter-spacing-2">Mars</button>
+                            <button aria-selected="false" class="uppercase text-accent bg-dark
+                            ff-sans-cond letter-spacing-2">Europa</button>
+                        </div>
 
                         <!-- Dots -->
-
+                        <div class="dot-indicators flex">
+                            <button aria-selected="true"><span class="sr-only">Slide 
+                                Title</span></button>
+                            <button aria-selected="false"><span class="sr-only">Slide 
+                                Title</span></button>
+                            <button aria-selected="false"><span class="sr-only">Slide 
+                                Title</span></button>
+                        </div>
 
                         <!-- Numbers -->
+                        <div>
+                            <div class="numeric-indicators">
+                                <button class="fs-500 ff-serif" aria-selected="true">1</button>
+                            </div>
+                            <div class="numeric-indicators">
+                                <button class="fs-500 ff-serif" aria-selected="false">2</button>
+                            </div>
+                            <div class="numeric-indicators">
+                                <button class="fs-500 ff-serif" aria-selected="false">3</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
             </section>
         </div>
 
-        <!-- <script src="index.pack.js"></script> -->
+        <script src="index.pack.js"></script>
     </body>
 </html>
